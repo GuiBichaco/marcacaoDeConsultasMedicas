@@ -17,3 +17,4 @@ export const HeaderTitle = styled.Text`
   color: ${theme.colors.white};
   font-size: ${theme.typography.title.fontSize}px;
   font-weight: ${theme.typography.title.fontWeight};
+`;
