@@ -11,7 +11,7 @@ type CreateAppointmentScreenProps = {
   navigation: NativeStackNavigationProp<RootStackParamList, 'CreateAppointment'>;
 };
 
-const CreateAppointmentScreen: React.FC<CreateAppointmentScreenProps> = ({ navigation }) => {
+const CreateAppointmentScreen: React.FC<CreateAppointmentScreenProps> = ({ navigation }) => { 
   const handleSubmit = async (appointment: {
     doctorId: string;
     date: Date;
