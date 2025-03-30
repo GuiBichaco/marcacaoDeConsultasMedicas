@@ -1,4 +1,4 @@
-# Documentação do Projeto: Marcação de Consultas Médicas
+# Marcação de Consultas Médicas
 
 ## Visão Geral
 Este projeto é um aplicativo móvel desenvolvido em **React Native** utilizando o **Expo**, focado na marcação de consultas médicas. Ele permite que usuários realizem login (ATUALIZAÇÃO FUTURA), agendem consultas com especialistas e visualizem seus agendamentos salvos.
