@@ -71,11 +71,14 @@ Com essa biblioteca, podemos salvar informações do usuário, como dados de log
 ├── 📂 assets/ *(Imagens, ícones e outros recursos estáticos)*
 ├── 📂 node_modules/ *(Dependências instaladas via npm/yarn)*
 ├── 📂 src/  
-│   ├── 📂 components/ *(Componentes reutilizáveis do app)*
-│   ├── 📂 screens/ *(Telas principais do aplicativo)*
-│   ├── 📂 styles/ *(Estilização global e tema do app)*
-│   ├── 📂 services/ *(Integração com APIs e banco de dados)*
-│   ├── 📂 routes/ *(Configuração de navegação do app)*
+│   ├── 📁 components/   *(Componentes reutilizáveis do app)*
+│   ├── 📁 screens/      *(Telas principais do aplicativo)*
+│   ├── 📁 styles/       *(Estilização global e tema do app)*
+│   ├── 📁 services/     *(Integração com APIs e banco de dados)*
+│   ├── 📁 routes/       *(Configuração de navegação do app)*
+│   ├── 📁 navigation/   *(Gerenciamento das rotas de navegação e stacks do React Navigation)*
+│   ├── 📁 contexts/     *(Gerenciamento de contexto e estado global com Context API)*
+│   ├── 📁 types/        *(Definições de tipos TypeScript compartilhados)*
 ├── 📄 App.tsx *(Arquivo principal do aplicativo)*
 ├── 📄 package.json *(Configuração das dependências do projeto)*
 └── 📄 babel.config.js *(Configuração do Babel para o Expo)*
@@ -117,7 +120,7 @@ export default {
 
 ## 6. Telas do Aplicativo
 
-### Tela de Login (ATUALIZAÇÃO FUTURA)
+### Tela de Login 
 A tela de login permite que os usuários se autentiquem no app.
 
 **Componentes Principais:**
