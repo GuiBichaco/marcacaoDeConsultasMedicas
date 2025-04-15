@@ -54,6 +54,16 @@ npm install @expo/vector-icons react-native-elements --save-dev @types/react-nat
 npm install @react-navigation/native-stack
 npm install @react-native-async-storage/async-storage @react-native-community/datetimepicker
 ```
+## 3.1 Instalação das Dependências
+Para verificar se o dispositivo está conectado à internet antes de tentar sincronizar dados com um backend (caso necessário no futuro), usaremos:
+```sh
+npm install @react-native-community/netinfo
+```
+Caso ainda não esteja instalado, rode o seguinte comando:
+```sh
+npm install @react-native-async-storage/async-storage
+```
+Com essa biblioteca, podemos salvar informações do usuário, como dados de login, perfil e consultas agendadas, diretamente no dispositivo.
 
 ## 4. Estrutura de Pastas
 ```sh
