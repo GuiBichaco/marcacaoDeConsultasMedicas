@@ -65,6 +65,8 @@ Caso ainda não esteja instalado, rode o seguinte comando:
 ```sh
 npm install @react-native-async-storage/async-storage
 ```
+Com essa biblioteca, podemos salvar informações do usuário, como dados de login, perfil e consultas agendadas, diretamente no dispositivo.
+
 ## ATENÇÃO: 
 As informações de instalação das dependências acima, são de base informativa e implementam o conhecimento e a documentação.
 Ao clonar o projeto (repositório) as dependências já viram instaladas, basta rodar no terminal o comando `npm i` ou `npm install` para que seja instalado o node_modules,
