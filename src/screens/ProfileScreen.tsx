@@ -1,12 +1,13 @@
+import React from 'react';
+import styled from 'styled-components/native';
+import { Button, ListItem } from 'react-native-elements';
+import { useAuth } from '../contexts/AuthContext';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import React from 'react';
-import { Button } from 'react-native-elements';
-import styled from 'styled-components/native';
-import Header from '../components/Header';
-import { useAuth } from '../contexts/AuthContext';
-import theme from '../styles/theme';
 import { RootStackParamList } from '../types/navigation';
+import theme from '../styles/theme';
+import Header from '../components/Header';
+import { ViewStyle } from 'react-native';
 
 type ProfileScreenProps = {
   navigation: NativeStackNavigationProp<RootStackParamList, 'Profile'>;
@@ -42,7 +43,7 @@ const ProfileScreen: React.FC = () => {
           <RoleBadge role={user?.role || ''}>
             <RoleText>{getRoleText(user?.role || '')}</RoleText>
           </RoleBadge>
-
+          
           {user?.role === 'doctor' && (
             <SpecialtyText>Especialidade: {user?.specialty}</SpecialtyText>
           )}
@@ -132,7 +133,7 @@ const Email = styled.Text`
 `;
 
 const RoleBadge = styled.View<{ role: string }>`
-  background-color: ${(props) => {
+  background-color: ${(props: any) => {
     switch (props.role) {
       case 'admin':
         return theme.colors.primary + '20';

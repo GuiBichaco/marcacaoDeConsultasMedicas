@@ -76,7 +76,6 @@ const PatientDashboardScreen: React.FC = () => {
     }
   };
 
-  // Carrega as consultas quando a tela estiver em foco
   useFocusEffect(
     React.useCallback(() => {
       loadAppointments();
@@ -111,9 +110,6 @@ const PatientDashboardScreen: React.FC = () => {
           appointments.map((appointment) => (
             <AppointmentCard key={appointment.id}>
               <ListItem.Content>
-                <ListItem.Title style={styles.patientName as TextStyle}>
-                  Paciente: {appointment.patientName}
-                </ListItem.Title>
                 <ListItem.Subtitle style={styles.dateTime as TextStyle}>
                   {appointment.date} às {appointment.time}
                 </ListItem.Subtitle>
@@ -129,6 +125,10 @@ const PatientDashboardScreen: React.FC = () => {
                   </StatusText>
                 </StatusBadge>
               </ListItem.Content>
+
+              <ListItem.Title style={styles.patientName as TextStyle}>
+                Paciente: {appointment.patientName}
+              </ListItem.Title>
             </AppointmentCard>
           ))
         )}
@@ -232,4 +232,4 @@ const StatusText = styled.Text<StyledProps>`
   font-weight: 500;
 `;
 
-export default PatientDashboardScreen; 
+export default PatientDashboardScreen;

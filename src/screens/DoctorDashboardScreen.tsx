@@ -88,14 +88,13 @@ const DoctorDashboardScreen: React.FC = () => {
           return appointment;
         });
         await AsyncStorage.setItem('@MedicalApp:appointments', JSON.stringify(updatedAppointments));
-        loadAppointments(); // Recarrega a lista
+        loadAppointments();
       }
     } catch (error) {
       console.error('Erro ao atualizar status:', error);
     }
   };
 
-  // Carrega as consultas quando a tela estiver em foco
   useFocusEffect(
     React.useCallback(() => {
       loadAppointments();
@@ -270,4 +269,4 @@ const ButtonContainer = styled.View`
   margin-top: 8px;
 `;
 
-export default DoctorDashboardScreen; 
+export default DoctorDashboardScreen;

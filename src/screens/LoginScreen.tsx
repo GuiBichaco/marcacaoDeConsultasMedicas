@@ -135,4 +135,4 @@ const ErrorText = styled.Text`
   margin-bottom: 10px;
 `;
 
-export default LoginScreen; 
+export default LoginScreen;

@@ -17,5 +17,5 @@ export default function AppRoutes() {
       <Stack.Screen name="CreateAppointment" component={CreateAppointmentScreen} />
       <Stack.Screen name="Profile" component={ProfileScreen} />
     </Stack.Navigator>
-  ); 
+  );
 }
