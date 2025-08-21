@@ -76,6 +76,7 @@ const PatientDashboardScreen: React.FC = () => {
     }
   };
 
+  // Carrega as consultas quando a tela estiver em foco
   useFocusEffect(
     React.useCallback(() => {
       loadAppointments();
@@ -102,6 +103,13 @@ const PatientDashboardScreen: React.FC = () => {
           buttonStyle={styles.buttonStyle}
         />
 
+        <Button
+          title="Configurações"
+          onPress={() => navigation.navigate('Settings')}
+          containerStyle={styles.button as ViewStyle}
+          buttonStyle={styles.settingsButton}
+        />
+
         {loading ? (
           <LoadingText>Carregando consultas...</LoadingText>
         ) : appointments.length === 0 ? (
@@ -110,6 +118,9 @@ const PatientDashboardScreen: React.FC = () => {
           appointments.map((appointment) => (
             <AppointmentCard key={appointment.id}>
               <ListItem.Content>
+                <ListItem.Title style={styles.patientName as TextStyle}>
+                  Paciente: {appointment.patientName}
+                </ListItem.Title>
                 <ListItem.Subtitle style={styles.dateTime as TextStyle}>
                   {appointment.date} às {appointment.time}
                 </ListItem.Subtitle>
@@ -125,10 +136,6 @@ const PatientDashboardScreen: React.FC = () => {
                   </StatusText>
                 </StatusBadge>
               </ListItem.Content>
-
-              <ListItem.Title style={styles.patientName as TextStyle}>
-                Paciente: {appointment.patientName}
-              </ListItem.Title>
             </AppointmentCard>
           ))
         )}
@@ -158,6 +165,10 @@ const styles = {
   },
   logoutButton: {
     backgroundColor: theme.colors.error,
+    paddingVertical: 12,
+  },
+  settingsButton: {
+    backgroundColor: theme.colors.secondary,
     paddingVertical: 12,
   },
   doctorName: {
@@ -232,4 +243,4 @@ const StatusText = styled.Text<StyledProps>`
   font-weight: 500;
 `;
 
-export default PatientDashboardScreen;
+export default PatientDashboardScreen; 

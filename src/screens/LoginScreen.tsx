@@ -34,7 +34,7 @@ const LoginScreen: React.FC = () => {
 
   return (
     <Container>
-      <Title>Login</Title>
+      <Title>App Marcação de Consultas</Title>
       
       <Input
         placeholder="Email"
@@ -135,4 +135,4 @@ const ErrorText = styled.Text`
   margin-bottom: 10px;
 `;
 
-export default LoginScreen;
+export default LoginScreen; 
