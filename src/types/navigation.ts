@@ -10,10 +10,13 @@
  * @property Home - Tela inicial da aplicação
  * @property CreateAppointment - Tela de criação de consulta
  * @property Profile - Tela de perfil do usuário
+ * @property EditProfile - Tela para editar o perfil do usuário
  * @property AdminDashboard - Tela do painel de administração
  * @property DoctorDashboard - Tela do painel do médico
  * @property PatientDashboard - Tela do painel do paciente
  * @property UserManagement - Tela de gerenciamento de usuários
+ * @property Notifications - Tela para exibir as notificações do usuário
+ * @property Settings - Tela de configurações do aplicativo
  */
 export type RootStackParamList = {
   Login: undefined;
@@ -28,4 +31,4 @@ export type RootStackParamList = {
   UserManagement: undefined;
   Notifications: undefined;
   Settings: undefined;
-}; 
+};
