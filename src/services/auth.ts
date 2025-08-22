@@ -2,7 +2,7 @@
  * DOCUMENTAÇÃO DO CÓDIGO
  * =======================
  *
- * * Arquivo: `authService.ts`
+ * * Arquivo: `auth.ts`
  * * Descrição: Este arquivo define o `authService`, um serviço de autenticação **mockado (simulado)**.
  * Em vez de fazer chamadas a uma API de um backend real, este serviço simula o comportamento de
  * um servidor de autenticação usando dados locais (mock data) e o armazenamento do dispositivo (`AsyncStorage`).

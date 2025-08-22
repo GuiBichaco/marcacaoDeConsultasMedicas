@@ -2,7 +2,7 @@
  * DOCUMENTAÇÃO DO CÓDIGO
  * =======================
  *
- * * Arquivo: `notificationService.ts`
+ * * Arquivo: `notification.ts`
  * * Descrição: Este arquivo define o `notificationService`, um serviço **mockado (simulado)** responsável
  * por gerenciar todas as operações relacionadas a notificações no aplicativo. Ele utiliza o
  * armazenamento local (`AsyncStorage`) para simular um banco de dados de notificações.
