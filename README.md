@@ -137,7 +137,7 @@ yarn web
 ```
 
 ## Estrutura do Projeto
-
+(Algumas telas foram refatoradas e não correspondem a estrura abaixo)
 ```
 marcacaoDeConsultasMedicas/
 ├── App.tsx                 # Componente principal da aplicação
