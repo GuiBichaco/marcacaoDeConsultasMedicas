@@ -196,7 +196,17 @@ marcacaoDeConsultasMedicas/
     │   │   ├── services/
     │   │   │   └── profileService.ts
     │   │   └── models/
-    │   ├── HomeScreen.tsx
+    |   |--- HomeScreen/
+    |   |   ├── index.tsx                # A camada de visualização (View)
+    |   |   ├── styles.ts                # Estilos da tela
+    |   |   ├── components/
+    |   |   │   └── AppointmentItem.tsx    # Componente para um item da lista de consultas
+    |   |   ├── hooks/
+    |   |   │   └── useHomeScreen.ts       # Lógica de estado e busca de dados da tela
+    |   |   ├── services/
+    |   |   │   └── appointmentService.ts  # Funções de API específicas da home
+    |   |   └── models/
+    |   |         └── doctors.ts             # Tipos e interfaces (provavelmente Doctor e Appointment)
     │   ├── LoginScreen.tsx
     │   ├── NotificationsScreen/       # Tela refatorada
     │   │   ├── index.tsx
