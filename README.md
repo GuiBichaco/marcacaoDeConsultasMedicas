@@ -206,7 +206,7 @@ marcacaoDeConsultasMedicas/
     |   |   ├── services/
     |   |   │   └── appointmentService.ts  # Funções de API específicas da home
     |   |   └── models/
-    |   |         └── doctors.ts             # Tipos e interfaces (provavelmente Doctor e Appointment)
+    |   |         └── doctors.ts             # Tipos e interfaces 
     │   ├── LoginScreen.tsx
     │   ├── NotificationsScreen/       # Tela refatorada
     │   │   ├── index.tsx
