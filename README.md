@@ -138,8 +138,6 @@ yarn web
 
 ## Estrutura do Projeto
 
-(Algumas telas tiveram sua estrura alterada de monolítica para modular)
-
 ```
 marcacaoDeConsultasMedicas/
 ├── App.tsx                 # Componente principal da aplicação
@@ -172,73 +170,18 @@ marcacaoDeConsultasMedicas/
     ├── navigation/       # Configuração de navegação
     │   └── AppNavigator.tsx             # Navegador principal
     │
- ├── screens/            # Telas da aplicação
-    │   ├── AdminDashboardScreen.tsx
-    │   ├── CreateAppointmentScreen/   # Tela refatorada com responsabilidades separadas
-    │   │   ├── index.tsx              # Apenas a camada de visualização (View)
-    │   │   ├── styles.ts              # Estilos da tela
-    │   │   ├── components/            # Componentes locais (se houver)
-    │   │   ├── hooks/
-    │   │   │   └── useCreateAppointment.ts # Lógica de estado e ações da tela
-    │   │   ├── services/
-    │   │   │   └── appointmentService.ts   # Lógica de negócio específica da tela
-    │   │   └── models/
-    │   │       └── types.ts             # Tipos e interfaces da tela
-    │   ├── DoctorDashboardScreen.tsx
-    │   ├── EditProfileScreen/         # Tela refatorada
-    │   │   ├── index.tsx
-    │   │   ├── styles.ts
-    │   │   ├── components/
-    │   │   │   └── EditProfileForm/
-    │   │   │       └── index.tsx
-    │   │   ├── hooks/
-    │   │   │   └── useEditProfile.ts
-    │   │   ├── services/
-    │   │   │   └── profileService.ts
-    │   │   └── models/
-    |   |--- HomeScreen/
-    |   |   ├── index.tsx                # A camada de visualização (View)
-    |   |   ├── styles.ts                # Estilos da tela
-    |   |   ├── components/
-    |   |   │   └── AppointmentItem.tsx    # Componente para um item da lista de consultas
-    |   |   ├── hooks/
-    |   |   │   └── useHomeScreen.ts       # Lógica de estado e busca de dados da tela
-    |   |   ├── services/
-    |   |   │   └── appointmentService.ts  # Funções de API específicas da home
-    |   |   └── models/
-    |   |         └── doctors.ts             # Tipos e interfaces 
-    │   ├── LoginScreen.tsx
-    │   ├── NotificationsScreen/       # Tela refatorada
-    │   │   ├── index.tsx
-    │   │   ├── styles.ts
-    │   │   ├── components/
-    │   │   │   └── NotificationItem/
-    │   │   │       └── index.tsx
-    │   │   ├── hooks/
-    │   │   │   └── useNotifications.ts
-    │   │   ├── services/              # (Vazio, usa serviço global)
-    │   │   └── models/                # (Vazio, usa tipo global)
-    │   ├── PatientDashboardScreen.tsx
-    │   ├── ProfileScreen/             # Tela refatorada
-    │   │   ├── index.tsx
-    │   │   ├── styles.ts
-    │   │   ├── components/
-    │   │   │   └── ProfileCard/
-    │   │   │       └── index.tsx
-    │   │   ├── hooks/
-    │   │   │   └── useProfileScreen.ts
-    │   │   └── ...
-    │   ├── RegisterScreen.tsx
-    │   ├── SettingsScreen/            # Tela refatorada
-    │   │   ├── index.tsx
-    │   │   ├── styles.ts
-    │   │   ├── components/
-    │   │   │   ├── PreferencesSection/
-    │   │   │   └── DataManagementSection/
-    │   │   ├── hooks/
-    │   │   │   └── useSettings.ts
-    │   │   └── models/
-    │   │       └── types.ts
+    ├── screens/          # Telas da aplicação
+    │   ├── AdminDashboardScreen.tsx     # Dashboard do administrador
+    │   ├── CreateAppointmentScreen.tsx  # Agendamento de consultas
+    │   ├── DoctorDashboardScreen.tsx    # Dashboard do médico
+    │   ├── EditProfileScreen.tsx        # Edição de perfil
+    │   ├── HomeScreen.tsx               # Tela inicial
+    │   ├── LoginScreen.tsx              # Tela de login
+    │   ├── NotificationsScreen.tsx      # Central de notificações
+    │   ├── PatientDashboardScreen.tsx   # Dashboard do paciente
+    │   ├── ProfileScreen.tsx            # Perfil do usuário
+    │   ├── RegisterScreen.tsx           # Registro de usuário
+    │   ├── SettingsScreen.tsx           # Configurações
     │   └── UserManagementScreen.tsx     # Gerenciamento de usuários
     │
     ├── services/         # Serviços e APIs
