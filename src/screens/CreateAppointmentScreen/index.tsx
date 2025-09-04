@@ -7,16 +7,16 @@
 
 import React from 'react';
 import { ScrollView } from 'react-native';
-import { Button, Input } from 'react-native-elements';
+import { Button, Header, Input } from 'react-native-elements';
 
 // Importa componentes de UI globais
-import Header from '../../../components/Header'; // Caminho ajustado
-import DoctorList from '../../../components/DoctorList'; // Caminho ajustado
-import TimeSlotList from '../../../components/TimeSlotList'; // Caminho ajustado
+
 
 // Importa o hook de lógica e os estilos
 import { useCreateAppointment } from './hooks/useCreateAppointment';
 import { Container, Title, SectionTitle, ErrorText, styles } from './styles';
+import TimeSlotList from '../../components/TimeSlotList';
+import DoctorList from '../../components/DoctorList';
 
 const CreateAppointmentScreen: React.FC = () => {
   // O hook provê todo o estado e as funções necessárias.

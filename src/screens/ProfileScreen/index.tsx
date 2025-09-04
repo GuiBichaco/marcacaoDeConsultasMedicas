@@ -6,8 +6,7 @@
  */
 
 import React from 'react';
-import { Button } from 'react-native-elements';
-import Header from '../../../components/Header'; // Ajustar caminho
+import { Button, Header } from 'react-native-elements';
 
 // Importações locais
 import { useProfileScreen } from './hooks/useProfileScreen';

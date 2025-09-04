@@ -2,7 +2,7 @@
  * @file Contém os estilos para a tela ProfileScreen e seus componentes filhos.
  */
 import styled from 'styled-components/native';
-import theme from '../../../styles/theme';
+import theme from '../../styles/theme';
 import { ViewStyle } from 'react-native';
 
 // --- Styled Components ---

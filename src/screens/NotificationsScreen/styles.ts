@@ -2,7 +2,7 @@
  * @file Contém os estilos para a tela NotificationsScreen e seus componentes.
  */
 import styled from 'styled-components/native';
-import theme from '../../../styles/theme';
+import theme from '../../styles/theme';
 import { ViewStyle } from 'react-native';
 
 // --- Styled Components para a tela principal ---

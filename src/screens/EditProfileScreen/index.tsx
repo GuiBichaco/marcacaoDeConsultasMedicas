@@ -6,7 +6,7 @@
 
 import React from 'react';
 import { Button } from 'react-native-elements';
-import Header from '../../../components/Header'; // Ajustar caminho
+import Header from '../../components/Header'; 
 
 // Importações locais
 import { useEditProfile } from './hooks/useEditProfile';

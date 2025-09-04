@@ -6,8 +6,8 @@
 import React from 'react';
 import { ActivityIndicator } from 'react-native';
 import { Button } from 'react-native-elements';
-import Header from '../../../components/Header';
-import theme from '../../../styles/theme';
+import Header from '../../components/Header';
+import theme from '../../styles/theme';
 
 // Importações locais
 import { useSettings } from './hooks/useSettings';

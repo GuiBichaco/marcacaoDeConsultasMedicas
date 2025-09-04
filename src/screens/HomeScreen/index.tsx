@@ -5,7 +5,7 @@ import { RootStackParamList } from '../../types/navigation';
 import { Appointment } from '../../types/appointments';
 import { useHomeScreen } from './hooks/useHomeScreen';
 import { AppointmentItem } from './components/AppointmentItem';
-import { CreateAppointmentButton } from './components/CreateAppointmentButton';
+
 import {
   Container,
   HeaderContainer,
@@ -47,7 +47,6 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
       </HeaderContainer>
 
       <Content>
-        <CreateAppointmentButton onPress={handleCreateAppointment} />
 
         <AppointmentList
           data={appointments}

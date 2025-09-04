@@ -3,7 +3,7 @@
  */
 
 import styled from 'styled-components/native';
-import theme from '../../../styles/theme'; // Caminho ajustado
+import theme from '../../styles/theme'; // Caminho ajustado
 import { ViewStyle } from 'react-native';
 
 // --- Styled Components ---
